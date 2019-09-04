@@ -11,6 +11,9 @@ modules.xml
 
 ### Maven ###
 target/
+.mvn/
+mvnw
+mvnw.*
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
