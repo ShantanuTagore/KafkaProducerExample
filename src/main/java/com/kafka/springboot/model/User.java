@@ -1,4 +1,4 @@
-package com.kafka.springbootkafkaproducer.model;
+package com.kafka.springboot.model;
 
 import lombok.Value;
 

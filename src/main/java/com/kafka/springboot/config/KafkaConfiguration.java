@@ -1,6 +1,6 @@
-package com.kafka.springbootkafkaproducer.config;
+package com.kafka.springboot.config;
 
-import com.kafka.springbootkafkaproducer.model.User;
+import com.kafka.springboot.model.User;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
