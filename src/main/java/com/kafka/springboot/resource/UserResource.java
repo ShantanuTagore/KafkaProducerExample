@@ -1,12 +1,14 @@
-package com.kafka.springbootkafkaproducer.resource;
+package com.kafka.springboot.resource;
 
-import com.kafka.springbootkafkaproducer.model.User;
+import com.kafka.springboot.model.User;
 import lombok.AllArgsConstructor;
+import lombok.extern.java.Log;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+@Log
 @RestController
 @AllArgsConstructor
 @RequestMapping("kafka")
@@ -20,6 +22,7 @@ public class UserResource {
     public String post(@Valid @RequestBody User user) {
 
         kafkaTemplate.send(TOPIC, user);
+        log.info("Published successfully");
 
         return "Published successfully";
     }
